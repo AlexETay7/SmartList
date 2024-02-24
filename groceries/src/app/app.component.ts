@@ -1,18 +1,32 @@
 import { Component } from '@angular/core';
+
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  public appPages = [
-    { title: 'Inbox', url: '/folder/inbox', icon: 'mail' },
-    { title: 'Outbox', url: '/folder/outbox', icon: 'paper-plane' },
-    { title: 'Favorites', url: '/folder/favorites', icon: 'heart' },
-    { title: 'Archived', url: '/folder/archived', icon: 'archive' },
-    { title: 'Trash', url: '/folder/trash', icon: 'trash' },
-    { title: 'Spam', url: '/folder/spam', icon: 'warning' },
+  public groceryLists = [
+    { 
+      title: 'Grocery List 1', 
+      items: [
+        { name: 'Item 1', selectedQuantity: 1 },
+        { name: 'Item 2', selectedQuantity: 1 },
+        { name: 'Item 3', selectedQuantity: 1 }
+      ]
+    },
+    { 
+      title: 'Grocery List 2', 
+      items: [
+        { name: 'Item 4', selectedQuantity: 1 },
+        { name: 'Item 5', selectedQuantity: 1 },
+        { name: 'Item 6', selectedQuantity: 1 }
+      ]
+    }
+    // Add more grocery lists as needed
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
+
+  public quantities = [1, 2, 3, 4, 5]; // Define available quantity options
+
   constructor() {}
 }
