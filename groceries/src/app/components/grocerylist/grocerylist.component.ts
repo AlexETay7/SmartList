@@ -9,6 +9,8 @@ export class GrocerylistComponent  implements OnInit {
 
   newItem: string = '';
   items: string[] = [];
+  quantity: string = '';
+  quantities: string[] = [];
   newListCreated: boolean = false;
 
   @Output() listCreated = new EventEmitter<string[]>();
@@ -17,7 +19,9 @@ export class GrocerylistComponent  implements OnInit {
     if (this.newItem.trim() !== '') {
       this.items.push(this.newItem);
       this.newItem = '';
-      console.log(this.items);
+
+      this.quantities.push(this.quantity);
+      this.quantity = '';
     }
   }
 

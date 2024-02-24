@@ -2,31 +2,7 @@
   <ion-split-pane contentId="main-content">
     <ion-menu contentId="main-content" type="overlay">
       <ion-content>
-        <!-- <ion-list id="inbox-list">
-          <ion-list-header>Find Products</ion-list-header>
-          <ion-item>
-            <ion-searchbar></ion-searchbar>
-          </ion-item>
-        </ion-list> -->
-          <app-grocerylist (listCreated)="onListCreated($event)"></app-grocerylist>
-
-
-        <!-- <ion-list id="inbox-list">
-          <ion-list-header>My Grocery Lists</ion-list-header>
-          <ion-note>Let's shop!</ion-note>
-
-          <ion-item-group *ngFor="let list of groceryLists">
-            <ion-item-divider>{{ list.title }}</ion-item-divider>
-            <ion-item *ngFor="let item of list.items">
-              <ion-label>{{ item.name }}</ion-label>
-              <ion-select [(ngModel)]="item.selectedQuantity">
-                <ion-select-option *ngFor="let quantity of quantities" [value]="quantity">{{ quantity }}</ion-select-option>
-              </ion-select>
-            </ion-item>
-          </ion-item-group>
-        </ion-list> -->
-
-        
+        <app-grocerylist (listCreated)="onListCreated($event)"></app-grocerylist>
       </ion-content>
     </ion-menu>
     <ion-router-outlet id="main-content"></ion-router-outlet>
