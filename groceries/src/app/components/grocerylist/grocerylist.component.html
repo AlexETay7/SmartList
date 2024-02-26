@@ -1,26 +1,28 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Create New Grocery List</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-  <ion-button class="ion-padding" (click)="createList()">Create New List</ion-button>
-  <ion-button *ngIf="newListCreated" class="ion-padding" (click)="addItemToList()">Add Item</ion-button>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Create New Grocery List</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content class="ion-padding">
+      <ion-button class="ion-padding" (click)="createList()">Create New List</ion-button>
+      <ion-button *ngIf="newListCreated" class="ion-padding" (click)="addItemToList()">Add Item</ion-button>
+      <ion-list *ngIf="newListCreated">
+        <ion-item>
+          <ion-input [(ngModel)]="newItem" placeholder="Enter item"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input [(ngModel)]="quantity" placeholder="Enter quantity"></ion-input>
+        </ion-item>
 
-  <ion-item>
-    <ion-input [(ngModel)]="newItem" placeholder="Enter item"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-input [(ngModel)]="quantity" placeholder="Enter quantity"></ion-input>
-  </ion-item>
-  <ion-list *ngIf="newListCreated">
-    <ion-item *ngFor="let item of items">
-      {{ item }}
-    </ion-item>
-    <ion-item *ngFor="let quantity of quantities">
-      {{quantity}}
-    </ion-item>
-  </ion-list>
+        <ion-item *ngFor="let item of items">
+          {{ item }}
+        </ion-item>
+        <ion-item *ngFor="let quantity of quantities">
+          {{quantity}}
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
 
