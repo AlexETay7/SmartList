@@ -1,10 +1,4 @@
-  .bottom-card {
-    margin: 0; /* Reset margins */
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-  }
+ 
   ion-grid {
     --ion-grid-padding: 20px;
   
@@ -30,6 +24,9 @@
   }
   ion-card-subtitle {
     color: #fff;
+  }
+  ion-item {
+    background-color: transparent;
   }
 
 
