@@ -7,7 +7,8 @@ import { IonicModule } from '@ionic/angular';
 import { HomePageRoutingModule } from './home-routing.module';
 
 import { HomePage } from './home.page';
-import { HomePopupComponent } from './components/home-popup/home-popup.component';
+
+import { UserMenuComponent } from './components/user-menu/user-menu.component';
 
 @NgModule({
   imports: [
@@ -17,8 +18,8 @@ import { HomePopupComponent } from './components/home-popup/home-popup.component
     HomePageRoutingModule
   ],
   exports: [
-    HomePopupComponent
+    UserMenuComponent
   ],
-  declarations: [HomePage, HomePopupComponent]
+  declarations: [HomePage, UserMenuComponent]
 })
 export class HomePageModule {}
