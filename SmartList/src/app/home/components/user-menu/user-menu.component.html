@@ -4,7 +4,11 @@
       <ion-title>Menu Content</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-content class="ion-padding">This is the menu content.</ion-content>
+  <ion-content class="ion-padding">
+    <ion-button>My To Do Lists</ion-button>
+    <ion-button>My Grocery Lists</ion-button>
+    <ion-button>My Recipes</ion-button>
+  </ion-content>
 </ion-menu>
 <div class="ion-page" id="main-content">
   <ion-header color="light">
@@ -16,3 +20,43 @@
     </ion-toolbar>
   </ion-header>
 </div>
+
+
+<!-- <ion-list lines="none">
+  <ion-list-header>
+    <h2 style="font-weight: 900; font-size: 14px;">STUDENT</h2>
+  </ion-list-header>
+  <ion-menu-toggle autoHide="false">
+    <ion-item button detail routerLink="student/schedule" [class.active-item]="path.startsWith('/student/schedule')">
+      <ion-icon slot="start" name="calendar"></ion-icon>
+      <ion-label>
+          My Schedule
+      </ion-label>
+    </ion-item>
+  </ion-menu-toggle>
+  <ion-menu-toggle autoHide="false">
+    <ion-item button detail routerLink="student/academics" [class.active-item]="path.startsWith('/student/academics')">
+      <ion-icon slot="start" name="school"></ion-icon>
+      <ion-label>
+        My Academics
+      </ion-label>
+    </ion-item>
+  </ion-menu-toggle>
+  <ion-menu-toggle autoHide="false">
+    <ion-item button detail routerLink="student/account" [class.active-item]="path.startsWith('/student/account')">
+      <ion-icon slot="start" name="card"></ion-icon>
+      <ion-badge *ngIf="numNotifications > 0" color="secondary" slot="end">{{numNotifications}} NEW</ion-badge>
+      <ion-label>
+        My Account
+      </ion-label>
+    </ion-item>
+  </ion-menu-toggle>
+  <ion-menu-toggle autoHide="false">
+    <ion-item button detail routerLink="/course-search" [class.active-item]="path.startsWith('/course-search')">
+      <ion-icon slot="start" name="list"></ion-icon>
+      <ion-label>
+        Course Search
+      </ion-label>
+    </ion-item>
+  </ion-menu-toggle>
+</ion-list> -->
