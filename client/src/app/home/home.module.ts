@@ -9,6 +9,7 @@ import { HomePageRoutingModule } from './home-routing.module';
 import { HomePage } from './home.page';
 
 import { UserMenuComponent } from './components/user-menu/user-menu.component';
+import { HomeMenuComponent } from './components/home-menu/home-menu.component';
 
 @NgModule({
   imports: [
@@ -18,8 +19,9 @@ import { UserMenuComponent } from './components/user-menu/user-menu.component';
     HomePageRoutingModule
   ],
   exports: [
-    UserMenuComponent
+    UserMenuComponent,
+    HomeMenuComponent
   ],
-  declarations: [HomePage, UserMenuComponent]
+  declarations: [HomePage, UserMenuComponent, HomeMenuComponent]
 })
 export class HomePageModule {}

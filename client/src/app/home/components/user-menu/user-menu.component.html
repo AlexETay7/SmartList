@@ -1,17 +1,19 @@
 <ion-menu contentId="main-content">
   <ion-header color="light">
-    <ion-toolbar>
+    <ion-toolbar color="light">
       <ion-title><ion-icon name="receipt" size="large"></ion-icon></ion-title>
     </ion-toolbar>
   </ion-header>
   <ion-content class="ion-padding">
-    <ion-item>
-      <ion-button>My To Do Lists</ion-button>
-    </ion-item>
-    <ion-button>My Grocery Lists</ion-button>
-    <ion-button>My Recipes</ion-button>
+    <ion-button color="light" expand="full" fill="solid">My To Do Lists<ion-icon class="ion-padding-horizontal" name="checkbox-outline"></ion-icon></ion-button>
+    <ion-button color="light" expand="full" fill="solid">My Grocery Lists<ion-icon class="ion-padding-horizontal" name="list-outline"></ion-icon></ion-button>
+    <ion-button color="light" expand="full" fill="solid">My Recipes<ion-icon class="ion-padding-horizontal" name="fast-food-outline"></ion-icon></ion-button>
   </ion-content>
+  <ion-footer>
+    <ion-button class="ion-padding" color="success" expand="full" fill="solid"><ion-icon class="ion-padding-horizontal" name="home-outline"></ion-icon></ion-button>
+  </ion-footer>
 </ion-menu>
+
 <div class="ion-page" id="main-content">
   <ion-header color="light">
     <ion-toolbar color="light">
@@ -22,6 +24,8 @@
     </ion-toolbar>
   </ion-header>
 </div>
+
+
 
 
 <!-- <ion-list lines="none">
