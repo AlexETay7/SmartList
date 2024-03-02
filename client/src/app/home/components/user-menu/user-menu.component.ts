@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user-menu',
@@ -7,8 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserMenuComponent  implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit() {}
+
+  redirectMyToDoPage() {
+    this.router.navigate(['/mytodos']);
+  }
+
+  redirectToMyGroceriesPage() {
+    this.router.navigate(['/mygrocerylists']);
+  }
+
+  redirectToMyRecipesPage() {
+    this.router.navigate(['/myrecipes']);
+  }
+
+  redirectToHomePage() {
+    this.router.navigate(['/home']);
+  }
 
 }

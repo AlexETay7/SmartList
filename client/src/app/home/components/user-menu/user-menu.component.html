@@ -5,12 +5,12 @@
     </ion-toolbar>
   </ion-header>
   <ion-content class="ion-padding">
-    <ion-button color="light" expand="full" fill="solid">My To Do Lists<ion-icon class="ion-padding-horizontal" name="checkbox-outline"></ion-icon></ion-button>
-    <ion-button color="light" expand="full" fill="solid">My Grocery Lists<ion-icon class="ion-padding-horizontal" name="list-outline"></ion-icon></ion-button>
-    <ion-button color="light" expand="full" fill="solid">My Recipes<ion-icon class="ion-padding-horizontal" name="fast-food-outline"></ion-icon></ion-button>
+    <ion-button color="light" expand="full" fill="solid" (click)="redirectToMyGroceriesPage()">My Grocery Lists<ion-icon class="ion-padding-horizontal" name="list-outline"></ion-icon></ion-button>
+    <ion-button color="light" expand="full" fill="solid" (click)="redirectMyToDoPage()">My To Do Lists<ion-icon class="ion-padding-horizontal" name="checkbox-outline"></ion-icon></ion-button>
+    <ion-button color="light" expand="full" fill="solid" (click)="redirectToMyRecipesPage()">My Recipes<ion-icon class="ion-padding-horizontal" name="fast-food-outline"></ion-icon></ion-button>
   </ion-content>
   <ion-footer>
-    <ion-button class="ion-padding" color="success" expand="full" fill="solid"><ion-icon class="ion-padding-horizontal" name="home-outline"></ion-icon></ion-button>
+    <ion-button class="ion-padding" color="success" expand="full" fill="solid" (click)="redirectToHomePage()"><ion-icon class="ion-padding-horizontal" name="home-outline"></ion-icon></ion-button>
   </ion-footer>
 </ion-menu>
 
