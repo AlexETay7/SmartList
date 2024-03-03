@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { GrocerylistPageRoutingModule } from './grocerylist-routing.module';
 
 import { GrocerylistPage } from './grocerylist.page';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    GrocerylistPageRoutingModule
+    GrocerylistPageRoutingModule,
+    HttpClientModule
   ],
   declarations: [GrocerylistPage]
 })

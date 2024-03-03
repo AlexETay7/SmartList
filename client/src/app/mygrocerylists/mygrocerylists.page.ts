@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GroceryListService } from '../services/grocery-list.service';
 
 @Component({
   selector: 'app-mygrocerylists',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MygrocerylistsPage implements OnInit {
 
-  constructor() { }
+  groceryLists: { name: string; items: string[]; }[] = [];
+
+  constructor(private groceryListService: GroceryListService) { }
 
   ngOnInit() {
+    this.groceryLists = this.groceryListService.getLists();
   }
 
 }
