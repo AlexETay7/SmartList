@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "smartlist-9b6e5": {
+      "hosting": {
+        "app": [
+          "smartlist-9b6e5"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "smartlist-9b6e5"
+  }
+}
