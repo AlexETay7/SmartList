@@ -39,6 +39,10 @@ const routes: Routes = [
     path: 'mygrocerylists',
     loadChildren: () => import('./mygrocerylists/mygrocerylists.module').then( m => m.MygrocerylistsPageModule)
   },
+  {
+    path: 'signup',
+    loadChildren: () => import('./signup/signup.module').then( m => m.SignupPageModule)
+  },
 ];
 
 @NgModule({

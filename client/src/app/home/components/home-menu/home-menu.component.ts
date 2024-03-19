@@ -26,7 +26,11 @@ export class HomeMenuComponent  implements OnInit {
     this.router.navigate(['/recipes']);
   }
 
-  login() {
+  redirectToLoginPage() {
     this.router.navigate(['/login']);
+  }
+
+  redirectToSignUpPage() {
+    this.router.navigate(['/signup']);
   }
 }
